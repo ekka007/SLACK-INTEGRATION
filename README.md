@@ -21,7 +21,7 @@ STEP-7 ==> ADD THIS BELOW DEFAULT SLACK NOTIFICAION SCRIPT INTO YOUR PIPELINE " 
 
 🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃🢃
 
-
+#
 // First, you need to install the Slack plugin on your Jenkins instance.
 // author "saroj_ekka"
 // Define the Slack channel to which you want to send the notification.
@@ -54,3 +54,5 @@ pipeline {
         }
     }
 }
+#
+
