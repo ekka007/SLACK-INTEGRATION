@@ -24,7 +24,7 @@ STEP-7 ==> ADD THIS BELOW DEFAULT SLACK NOTIFICAION SCRIPT INTO YOUR PIPELINE " 
 // First, you need to install the Slack plugin on your Jenkins instance.
 // author "saroj_ekka"
 // Define the Slack channel to which you want to send the notification.
-def slackChannel = '#devops_project' <--------------------------------------------------" change your channel name"
+def slackChannel = '#devops_project'
 
 // Define the Jenkins pipeline.
 pipeline {
@@ -39,6 +39,16 @@ pipeline {
         stage('CODE-BUILD') {
             steps {
                 sh 'mvn compile'
+            }
+        }
+        stage('TEST') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('PACKAGE') {
+            steps {
+                sh 'mvn package'
             }
         }
     }
